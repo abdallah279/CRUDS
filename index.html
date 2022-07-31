@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS System</title>
+
+    <!-- FontAweome CDN Link for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Start Header -->
+    <header class="header">
+        <div class="container">
+            <div class="content">
+                <div class="logo">
+                    <img src="imgs/logo.png" alt="">
+                </div>
+                <div class="profile">
+                    <a href="index.html"><img src="imgs/profile.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <main class="main">
+        <!-- Start Create -->
+        <aside class="create">
+            <h2 class="title">Create</h2>
+            <form action="">
+                <input type="text" placeholder="Name" id="nameInp">
+                <input type="number" placeholder="Price" id="priceInp">
+                <input type="number" placeholder="Discount" id="discountInp">
+                <input type="text" placeholder="Category" id="categoryInp">
+                <input type="number" placeholder="Amount" id="amountInp">
+            </form>
+            <button class="btn" id="btn">Add</button>
+        </aside>
+        <!-- End Create -->
+
+        <!-- Start Product info -->
+        <section class="product-info">
+            <form action="">
+                <i id="searchBtn" class="fa-solid fa-magnifying-glass searchBtn"></i>
+                <input type="text" id="searchInput" placeholder="Search">
+                <i class="fa-solid fa-xmark close-btn" id="close-btn"></i>
+            </form>
+            <div class="table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Disc</th>
+                            <th>Total</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productsContainer">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- End Product info -->
+    </main>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
